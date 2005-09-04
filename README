@@ -1,0 +1,36 @@
+$Id: README 14 2005-09-04 07:19:55Z kentaro $
+
+WWW-Blog-Metadata-AccountAutoDiscovery version 0.01
+===================================================
+
+DESCRIPTION
+
+WWW::Blog::Metadata::AccountAutoDiscovery is a WWW::Blog::Metadata plugin
+to extract online accounts of a weblog author.
+
+INSTALLATION
+
+To install this module type the following:
+
+   perl Makefile.PL
+   make
+   make test
+   make install
+
+DEPENDENCIES
+
+This module requires these other modules and libraries:
+
+  - WWW::Blog::Metadata
+  - HTML::AccountAutoDiscovery
+
+COPYRIGHT AND LICENCE
+
+Put the correct copyright and licence information here.
+
+Copyright (C) 2005 by Kentaro Kuribayashi
+
+This library is free software; you can redistribute it and/or modify
+it under the same terms as Perl itself.
+
+
