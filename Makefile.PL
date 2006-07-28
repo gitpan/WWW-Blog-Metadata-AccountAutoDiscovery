@@ -1,5 +1,3 @@
-#$Id: Makefile.PL 14 2005-09-04 07:19:55Z kentaro $
-
 use ExtUtils::MakeMaker;
 
 WriteMakefile(

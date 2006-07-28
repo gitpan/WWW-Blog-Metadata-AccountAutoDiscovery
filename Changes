@@ -1,6 +1,10 @@
-$Id: Changes 14 2005-09-04 07:19:55Z kentaro $
+Revision history for WWW::Blog::Metadata::AccountAutoDiscovery
 
-Revision history for Perl extension WWW::Blog::Metadata::AccountAutoDiscovery.
+0.02  Sat Jul 29 2006
+    - fixed a bug not to treat plural accounts correctly. And be
+      careful about that online_accounts method now returns a
+      reference to array of account info for that fix. Thanks to
+      Tatsuhiko Miyagawa for pointing out the bug.
 
 0.01  Sun Sep 4 2005
     - original version
