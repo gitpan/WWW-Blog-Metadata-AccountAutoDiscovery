@@ -1,10 +1,10 @@
-use ExtUtils::MakeMaker;
-
-WriteMakefile(
-    NAME              => 'WWW::Blog::Metadata::AccountAutoDiscovery',
-    VERSION_FROM      => 'lib/WWW/Blog/Metadata/AccountAutoDiscovery.pm',
-    PREREQ_PM         => {
-        WWW::Blog::Metadata        => 0.02,
-        HTML::AccountAutoDiscovery => 0.06,
-    },
-);
+use inc::Module::Install;
+name 'WWW-Blog-Metadata-AccountAutoDiscovery';
+all_from 'lib/WWW/Blog/Metadata/AccountAutoDiscovery.pm';
+license 'MIT';
+requires 'WWW::Blog::Metadata';
+requires 'HTML::AccountAutoDiscovery';
+build_requires 'Test::More';
+use_test_base;
+auto_include;
+WriteAll;

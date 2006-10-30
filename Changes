@@ -1,10 +1,23 @@
 Revision history for WWW::Blog::Metadata::AccountAutoDiscovery
 
-0.02  Sat Jul 29 2006
-    - fixed a bug not to treat plural accounts correctly. And be
-      careful about that online_accounts method now returns a
-      reference to array of account info for that fix. Thanks to
-      Tatsuhiko Miyagawa for pointing out the bug.
+[Changes for 0.03 - 2006-10-30]
 
-0.01  Sun Sep 4 2005
-    - original version
+ * online_accounts() method now considers which context it is called
+   in, scalar context or list context.
+ * Removed t/01_accounts.t
+ * Added t/01_extract_from_uri.t
+ * Added t/02_extract_uri.t
+ * Added t/03_context.t
+ * Added t/99_pod.t
+ * Added t/sample/accounts.html
+
+[Changes for 0.02 - 2006-07-29]
+
+ * fixed a bug not to treat plural accounts correctly. And be careful
+   about that online_accounts method() now returns a reference to
+   array of account info for that fix.
+   Thanks to Tatsuhiko Miyagawa for pointing out the bug.
+
+[Changes for 0.01 - 2005-09-04]
+
+ * original version
